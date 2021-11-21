@@ -1,7 +1,5 @@
 /* eslint valid-jsdoc: "off" */
 
-'use strict';
-
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -22,7 +20,9 @@ module.exports = (appInfo) => {
     dialect: 'postgres',
     host: '127.0.0.1',
     port: 5432,
-    database: 'blog'
+    database: 'blog',
+    username: 'blog',
+    password: 'blog'
   };
 
   // add your user config here
