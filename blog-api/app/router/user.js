@@ -1,5 +1,6 @@
-'use strict';
+module.exports = (app) => {
+  // 注册
+  app.router.post('/user', app.controller.user.createUser);
 
-module.exports = app => {
   app.router.get('/user/list', app.controller.user.getUserList);
 };
